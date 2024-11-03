@@ -24,12 +24,38 @@ body {
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.4;
-  background-color: var(--grey-colour);
+  background-color: #003049;
   color: var(--white-colour);
   text-rendering: optimizeLegibility;
 }
 
-.container {
+a,
+a:link,
+a:visited {
+  color: var(--blue-colour);
+  text-decoration: none;
+}
+
+sup {
+  font-size: 0.5rem;
+  margin-left: 0.5em;
+}
+
+button {
+  outline: none;
+  border: none;
+  padding: 0.75em 1.5em;
+  border-radius: 0.25em;
+  cursor: pointer;
+  transition: all ease-in-out 0.1s;
+}
+
+button:hover,
+button:focus {
+  opacity: 0.75;
+}
+
+.out-container {
   width: 50%;
   max-width: 760px;
   margin: 0 auto;
@@ -38,15 +64,69 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 1em;
 }
 
-button {
-  outline: none;
-  border: none;
-  border-radius: 3px;
-  background-color: var(--lilac-colour);
-  color: var(--grey-colour);
+#invoice-generator {
+  background-color: var(--grey-colour);
+}
+
+.in-container {
+  padding: 1em;
+  border-bottom-left-radius: 0.25em;
+  border-bottom-right-radius: 0.25em;
+}
+
+.title-block {
+  background-color: var(--blue-colour);
+  text-align: center;
+  padding: 2em 0;
+  border-top-left-radius: 0.25em;
+  border-top-right-radius: 0.25em;
+}
+
+.job-buttons {
+  padding: 2em 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.title {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.job-list > ul > li:first-of-type {
+  margin-top: 0.5em;
+}
+
+.job-list > ul > li {
+  font-size: 1.25rem;
+  margin-top: 0.1em;
+}
+
+.title,
+.job-list > ul > li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total {
+  border-top: 1px solid var(--white-colour);
   margin-top: 1em;
-  padding: 0.75em 1.5em;
-  cursor: pointer;
+  padding-top: 1em;
+}
+
+button#submit {
+  background-color: var(--blue-colour);
+  color: var(--white-colour);
+  display: block;
+  width: 100%;
+  font-weight: bold;
+  margin-top: 1em;
 }

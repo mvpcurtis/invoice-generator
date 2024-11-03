@@ -12,10 +12,47 @@
   </head>
   <!-- BODY -->
   <body>
-    <div class="container">
-      <h1>Invoice Generator</h1>
-      <p>A JavaScript practice project</p>
-      <button>Testing...</button>
+    <!-- OUTTER CONTAINER -->
+    <div class="out-container">
+      <!-- GENERATOR -->
+      <div id="invoice-generator">
+        <div class="title-block">
+          <!-- INNER CONTAINER -->
+          <div class="in-container">
+            <h1>Invoice Generator</h1>
+            <p>Generate an invoice</p>
+          </div>
+        </div>
+        <!-- INNER CONTAINER -->
+        <div class="in-container">
+          <!-- BUTTONS -->
+          <div class="job-buttons">
+            <button id="mow-lawn">Mow Lawn: £10</button>
+            <button id="jetwash-garden">Jetwash Garden: £20</button>
+            <button id="wash-car">Wash Car: £30</button>
+          </div>
+          <!-- JOB LIST -->
+          <div class="job-list">
+            <div class="title">
+              <span>Job:</span>
+              <span>Price:</span>
+            </div>
+            <ul>
+              <li><span>Mow Lawn</span><span>£10</span></li>
+              <li><span>Jetwash Garden</span><span>£20</span></li>
+              <li><span>Wash Car</span><span>£30</span></li>
+            </ul>
+          </div>
+          <div class="total">
+            <div class="title">
+              <span>Notes</span>
+              <span>Price Total:</span>
+            </div>
+            <!-- SUBMIT BUTTON -->
+            <button id="submit">Send Invoice</button>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- JAVASCRIPT -->
     <script src="script.js"></script>
